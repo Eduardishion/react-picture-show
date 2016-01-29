@@ -295,7 +295,8 @@ const PictureShow = React.createClass({
     return (
       <Swipeable
         className={mainClass}
-        onSwiped={this._handleSwipe}
+        onSwipedLeft={this._handleSwipe}
+        onSwipedRight={this._handleSwipe}
         onSwipeRight={this._handleSwiping}
         onSwipeLeft={this._handleSwiping}>
         <div className='ps-wrap' style={wrapStyle} ref='wrap'>
