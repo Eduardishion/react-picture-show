@@ -2,6 +2,7 @@
 
 import throttle from 'lodash/function/throttle';
 const React = require('react');
+const ReactDOM = require('react-dom');
 const Swipeable = require('react-swipeable');
 const noop = function () {};
 
@@ -108,7 +109,7 @@ const PictureShow = React.createClass({
 
     direction = direction || (slideIdx > before ? 'right' : 'left');
 
-    var elm = this.getDOMNode(),
+    var elm = ReactDOM.findDOMNode(this),
       width = elm.offsetWidth,
       animationTime = getTransitionTime(width, this.props.animationSpeed);
 
@@ -148,7 +149,7 @@ const PictureShow = React.createClass({
   },
 
   _handleResize: throttle(function () {
-    var box = this.refs.wrap.getDOMNode().getBoundingClientRect();
+    var box = this.refs.wrap.getBoundingClientRect();
     this.setState({
       ratio: [box.width, box.height]
     });
@@ -159,7 +160,7 @@ const PictureShow = React.createClass({
       return;
     }
 
-    var elm = this.getDOMNode(),
+    var elm = ReactDOM.findDOMNode(this),
       box = elm.getBoundingClientRect(),
       left = box.left,
       right = left + box.width,
