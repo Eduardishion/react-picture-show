@@ -1,7 +1,7 @@
 {
-  "name": "@particle/react-picture-show",
+  "name": "react-picture-show-particle",
   "version": "1.4.2",
-  "description": "Slideshow Component for React.js",
+  "description": "Slideshow Component for React.js, with modifications made by Particle Team",
   "main": "lib/PictureShow.js",
   "scripts": {
     "test": "mocha --compilers js:babel/register test/PictureShow.test.jsx",
