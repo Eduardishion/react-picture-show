@@ -1,6 +1,6 @@
 {
   "name": "react-picture-show",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Slideshow Component for React.js",
   "main": "lib/PictureShow.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/areusjs/react-picture-show.git"
+    "url": "https://github.com/spark/react-picture-show.git"
   },
   "keywords": [
     "react-component",
@@ -24,9 +24,9 @@
   "author": "gregoryskiano@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/areusjs/react-picture-show/issues"
+    "url": "https://github.com/spark/react-picture-show/issues"
   },
-  "homepage": "https://github.com/areusjs/react-picture-show",
+  "homepage": "https://github.com/spark/react-picture-show",
   "devDependencies": {
     "b": "^2.0.1",
     "babel": "^5.8.21",
