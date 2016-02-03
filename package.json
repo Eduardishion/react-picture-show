@@ -1,5 +1,5 @@
 {
-  "name": "react-picture-show",
+  "name": "@particle/react-picture-show",
   "version": "1.4.2",
   "description": "Slideshow Component for React.js",
   "main": "lib/PictureShow.js",
