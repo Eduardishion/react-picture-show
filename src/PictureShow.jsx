@@ -1,8 +1,11 @@
 /* globals window, navigator */
 
-import throttle from 'lodash/function/throttle';
+const throttle = require('lodash/throttle');
 const React = require('react');
 const ReactDOM = require('react-dom');
+const PropTypes = require('prop-types');
+const ReactCreateClass = require('create-react-class');
+
 const Swipeable = require('react-swipeable');
 const noop = function () {};
 
@@ -30,19 +33,19 @@ function support3d () {
   return v > -1 ? v > 9 : true;
 }
 
-const PictureShow = React.createClass({
+const PictureShow = ReactCreateClass({
 
   propTypes: {
-    ratio: React.PropTypes.array,
-    animationSpeed: React.PropTypes.number,
-    startingSlide: React.PropTypes.number,
-    onClickSlide: React.PropTypes.func,
-    onBeforeTransition: React.PropTypes.func,
-    onAfterTransition: React.PropTypes.func,
-    slideBuffer: React.PropTypes.number,
-    clickDivide: React.PropTypes.number,
-    infinite: React.PropTypes.bool,
-    suppressPending: React.PropTypes.bool
+    ratio: PropTypes.array,
+    animationSpeed: PropTypes.number,
+    startingSlide: PropTypes.number,
+    onClickSlide: PropTypes.func,
+    onBeforeTransition: PropTypes.func,
+    onAfterTransition: PropTypes.func,
+    slideBuffer: PropTypes.number,
+    clickDivide: PropTypes.number,
+    infinite: PropTypes.bool,
+    suppressPending: PropTypes.bool
   },
 
   getDefaultProps: function (argument) {
